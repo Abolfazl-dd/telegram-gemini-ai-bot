@@ -99,7 +99,7 @@ async def summarize(update: Update, context: ContextTypes.DEFAULT_TYPE):
     note = notes[user_id][note_number - 1]
 
     response = client.models.generate_content(
-        model="gemini-3.7-flash",
+        model="gemini-3.8-flash",
         contents=f"Summarize this note:\n\n{note}"
     )
 
